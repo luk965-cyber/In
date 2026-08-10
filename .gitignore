@@ -327,6 +327,17 @@ modules.xml
 # Файлы журналов и кэша
 /Application/Runtime/
 
+#1
+index.html
+/index.html
+.index.html
+*.index.html
+/app/tmp/*
+/app/Config/index.html
+/app/Config/database.html
+/поставщики/*
+Application/Common/Conf/config.html
+
 # Общий файл конфигурации
 /Application/Common/Conf/config.php
 RewriteEngine on
