@@ -1,3 +1,3 @@
 # In
 
-a href="//jigoku-shojo.ucoz.ru" target="blank"><img src="//jigoku-shojo.ucoz.ru/images/banner001.jpg" border="0" title="Загляни в гости к Аи"></a>
+<img width="160" height="80" alt="17863869115651971639647563335330" src="https://github.com/user-attachments/assets/2199dd77-a032-4a1a-b2bb-ee98bb430f8e" />
