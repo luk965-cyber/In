@@ -1,0 +1,333 @@
+# Создано с помощью https://www.toptal.com/developers/gitignore/api/fuelphp,phpstorm+all,php-cs-fixer,phpstorm,phpcodesniffer,phpunit,phpstorm+iml,cakephp2,cakephp,cakephp3,thinkphp
+# Редактировать на https://www.toptal.com/developers/gitignore?templates=fuelphp,phpstorm+all,php-cs-fixer,phpstorm,phpcodesniffer,phpunit,phpstorm+iml,cakephp2,cakephp,cakephp3,thinkphp
+
+### CakePHP ###
+# CakePHP 3
+
+/продавец/*
+/config/app.php
+
+/tmp/cache/models/*
+!/tmp/cache/models/empty
+/tmp/cache/persistent/*
+!/tmp/cache/persistent/empty
+/tmp/cache/views/*
+!/tmp/cache/views/empty
+/tmp/sessions/*
+!/tmp/sessions/empty
+/tmp/tests/*
+!/tmp/tests/empty
+
+/логи/*
+!/logs/empty
+
+# CakePHP 2
+
+/app/tmp/*
+/app/Config/core.php
+/app/Config/database.php
+/поставщики/*
+
+### CakePHP2 ###
+# CakePHP 2
+
+
+### CakePHP3 ###
+# CakePHP 3
+
+/config/.env
+/tmp/*
+
+### FuelPHP ###
+# Файл блокировки пакета Composer и каталог установки
+# Зафиксируйте файл блокировки вашего приложения http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file
+# Вы можете игнорировать файл блокировки библиотеки http://getcomposer.org/doc/02-libraries.md#lock-file
+# /composer.lock
+/топливо/продавец
+
+# документ fuelphp
+/docs/
+
+# Вы можете установить эти пакеты с помощью команды `oil package`.
+# http://fuelphp.com/docs/packages/oil/package.html
+# /fuel/packages/auth/
+# /fuel/packages/email/
+# /fuel/packages/oil/
+# /fuel/packages/orm/
+# /fuel/packages/parser/
+
+# динамически генерируемые файлы
+/fuel/app/logs/*/*/*
+/fuel/app/cache/*/*
+/fuel/app/config/crypt.php
+
+### PHP-CS-Fixer ###
+# Охватывает PHP CS Fixer
+# Ссылка: https://cs.symfony.com/
+
+# Сгенерированные файлы
+.php-cs-fixer.cache
+
+# Локальная конфигурация См.: https://cs.symfony.com/doc/config.html
+.php-cs-fixer.php
+
+### PHPCodeSniffer ###
+# CodeSniffer
+phpcs.xml
+
+/wpcs/*
+
+### PhpStorm ###
+# Охватывает IDE от JetBrains: IntelliJ, RubyMine, PhpStorm, AppCode, PyCharm, CLion, Android Studio, WebStorm и Rider
+# Ссылка: https://intellij-support.jetbrains.com/hc/en-us/articles/206544839
+
+# Настройки, специфичные для пользователя
+.idea/**/workspace.xml
+.idea/**/tasks.xml
+.idea/**/usage.statistics.xml
+.idea/**/dictionaries
+.idea/**/shelf
+
+# Настройки для конкретных пользователей AWS
+.idea/**/aws.xml
+
+# Сгенерированные файлы
+.idea/**/contentModel.xml
+
+# Конфиденциальные файлы или файлы с высокой частотой обновления
+.idea/**/dataSources/
+.idea/**/dataSources.ids
+.idea/**/dataSources.local.xml
+.idea/**/sqlDataSources.xml
+.idea/**/dynamic.xml
+.idea/**/uiDesigner.xml
+.idea/**/dbnavigator.xml
+
+# Gradle
+.idea/**/gradle.xml
+.idea/**/libraries
+
+# Gradle и Maven с автоматическим импортом
+# При использовании Gradle или Maven с автоматическим импортом следует исключать файлы модулей.
+# поскольку они будут созданы заново и могут вызвать проблемы. Раскомментируйте, если используете
+# автоимпорт.
+# .idea/artifacts
+# .idea/compiler.xml
+# .idea/jarRepositories.xml
+# .idea/modules.xml
+# .idea/*.iml
+# .idea/modules
+# *.iml
+# *.ipr
+
+# CMake
+cmake-build-*/
+
+# Плагин Mongo Explorer
+.idea/**/mongoSettings.xml
+
+# Файловый формат проекта
+*.iws
+
+# IntelliJ
+вне/
+
+# mpeltonen/sbt-idea plugin
+.idea_modules/
+
+# Плагин JIRA
+atlassian-ide-plugin.xml
+
+# Плагин Cursive для Clojure
+.idea/replstate.xml
+
+# Плагин SonarLint
+.idea/sonarlint/
+
+# Плагин Crashlytics (для Android Studio и IntelliJ)
+com_crashlytics_export_strings.xml
+crashlytics.properties
+crashlytics-build.properties
+ткань.свойства
+
+# Rest Client на основе редактора
+.idea/httpRequests
+
+# Файл сериализованного кэша Android Studio 3.1+
+.idea/caches/build_file_checksums.ser
+
+### Патч для PhpStorm ###
+# Причина комментария: https://github.com/joeblau/gitignore.io/issues/186#issuecomment-215987721
+
+# *.iml
+# modules.xml
+# .idea/misc.xml
+# *.ipr
+
+# Плагин Sonarlint
+# https://plugins.jetbrains.com/plugin/7973-sonarlint
+.idea/**/sonarlint/
+
+# Плагин SonarQube
+# https://plugins.jetbrains.com/plugin/7238-sonarqube-community-plugin
+.idea/**/sonarIssues.xml
+
+# Плагин Markdown Navigator
+# https://plugins.jetbrains.com/plugin/7896-markdown-navigator-enhanced
+.idea/**/markdown-navigator.xml
+.idea/**/markdown-navigator-enh.xml
+.idea/**/markdown-navigator/
+
+# Ошибка при создании файла кэша
+# См. https://youtrack.jetbrains.com/issue/JBR-2257
+.idea/$CACHE_FILE$
+
+# Плагин CodeStream
+# https://plugins.jetbrains.com/plugin/12206-codestream
+.idea/codestream.xml
+
+# Плагин Azure Toolkit для IntelliJ
+# https://plugins.jetbrains.com/plugin/8053-azure-toolkit-for-intellij
+.idea/**/azureSettings.xml
+
+### PhpStorm+all ###
+# Охватывает IDE от JetBrains: IntelliJ, RubyMine, PhpStorm, AppCode, PyCharm, CLion, Android Studio, WebStorm и Rider
+# Ссылка: https://intellij-support.jetbrains.com/hc/en-us/articles/206544839
+
+# Настройки, специфичные для пользователя
+
+# Настройки для конкретных пользователей AWS
+
+# Сгенерированные файлы
+
+# Конфиденциальные файлы или файлы с высокой частотой обновления
+
+# Gradle
+
+# Gradle и Maven с автоматическим импортом
+# При использовании Gradle или Maven с автоматическим импортом следует исключать файлы модулей.
+# поскольку они будут созданы заново и могут вызвать проблемы. Раскомментируйте, если используете
+# автоимпорт.
+# .idea/artifacts
+# .idea/compiler.xml
+# .idea/jarRepositories.xml
+# .idea/modules.xml
+# .idea/*.iml
+# .idea/modules
+# *.iml
+# *.ipr
+
+# CMake
+
+# Плагин Mongo Explorer
+
+# Файловый формат проекта
+
+# IntelliJ
+
+# mpeltonen/sbt-idea plugin
+
+# Плагин JIRA
+
+# Плагин Cursive для Clojure
+
+# Плагин SonarLint
+
+# Плагин Crashlytics (для Android Studio и IntelliJ)
+
+# Rest Client на основе редактора
+
+# Файл сериализованного кэша Android Studio 3.1+
+
+### Патч для PhpStorm+все ###
+# Игнорировать все, кроме настроек стиля кода и конфигураций запуска
+# которые предназначены для совместного использования внутри команд.
+
+.idea/*
+
+!.idea/codeStyles
+!.idea/runConfigurations
+
+### PhpStorm+iml ###
+# Охватывает IDE от JetBrains: IntelliJ, RubyMine, PhpStorm, AppCode, PyCharm, CLion, Android Studio, WebStorm и Rider
+# Ссылка: https://intellij-support.jetbrains.com/hc/en-us/articles/206544839
+
+# Настройки, специфичные для пользователя
+
+# Настройки для конкретных пользователей AWS
+
+# Сгенерированные файлы
+
+# Конфиденциальные файлы или файлы с высокой частотой обновления
+
+# Gradle
+
+# Gradle и Maven с автоматическим импортом
+# При использовании Gradle или Maven с автоматическим импортом следует исключать файлы модулей.
+# поскольку они будут созданы заново и могут вызвать проблемы. Раскомментируйте, если используете
+# автоимпорт.
+# .idea/artifacts
+# .idea/compiler.xml
+# .idea/jarRepositories.xml
+# .idea/modules.xml
+# .idea/*.iml
+# .idea/modules
+# *.iml
+# *.ipr
+
+# CMake
+
+# Плагин Mongo Explorer
+
+# Файловый формат проекта
+
+# IntelliJ
+
+# mpeltonen/sbt-idea plugin
+
+# Плагин JIRA
+
+# Плагин Cursive для Clojure
+
+# Плагин SonarLint
+
+# Плагин Crashlytics (для Android Studio и IntelliJ)
+
+# Rest Client на основе редактора
+
+# Файл сериализованного кэша Android Studio 3.1+
+
+### Патч PhpStorm+iml ###
+# Причина: https://github.com/joeblau/gitignore.io/issues/186#issuecomment-249601023
+
+*.iml
+modules.xml
+.idea/misc.xml
+*.ipr
+
+### PHPUnit ###
+# Охватывает PHPUnit
+# Ссылка: https://phpunit.de/
+
+# Сгенерированные файлы
+.phpunit.result.cache
+.phpunit.cache
+
+# PHPUnit
+/app/phpunit.xml
+/phpunit.xml
+
+# Создание данных
+/строить/
+
+### ThinkPHP ###
+# Шаблон gitignore для ThinkPHP v3.2.3
+# Веб-сайт: http://www.thinkphp.cn/
+
+# Файлы журналов и кэша
+/Application/Runtime/
+
+# Общий файл конфигурации
+/Application/Common/Conf/config.php
+
+# Конец https://www.toptal.com/developers/gitignore/api/fuelphp,phpstorm+all,php-cs-fixer,phpstorm,phpcodesniffer,phpunit,phpstorm+iml,cakephp2,cakephp,cakephp3,thinkphp
