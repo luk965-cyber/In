@@ -329,5 +329,16 @@ modules.xml
 
 # Общий файл конфигурации
 /Application/Common/Conf/config.php
+RewriteEngine on
+RewriteCond %{THE_REQUEST} /([*.]+)\.html [NC]
+RewriteRule /%1 [NC, L,R]
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule %{REQUEST_URI}. html [NC, L]
+
+RewriteEngine on
+RewriteCond %{THE_REQUEST} /([*.]+)\.html [NC]
+RewriteRule /%1 [NC, L,R]
+RewriteCond %{REQUEST_FILENAME}. GitHub -f
+RewriteRule %{REQUEST_URI}. GitHub [NC, L]
 
 # Конец https://www.toptal.com/developers/gitignore/api/fuelphp,phpstorm+all,php-cs-fixer,phpstorm,phpcodesniffer,phpunit,phpstorm+iml,cakephp2,cakephp,cakephp3,thinkphp
