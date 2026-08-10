@@ -3,3 +3,9 @@ RewriteCond %{THE_REQUEST} /([*.]+)\.html [NC]
 RewriteRule /%1 [NC, L,R]
 RewriteCond %{REQUEST_FILENAME}.html -f
 RewriteRule %{REQUEST_URI}. html [NC, L]
+
+RewriteEngine on
+RewriteCond %{THE_REQUEST} /([*.]+)\luk965-cyber.github.io/In/ [NC]
+RewriteRule /%1 [NC, L,R]
+RewriteCond %{REQUEST_FILENAME}luk965-cyber.github.io/In/ -f
+RewriteRule %{REQUEST_URI}. luk965-cyber.github.io/In/ [NC, L]
